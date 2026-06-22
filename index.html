@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+
+    <div class="output-box">
+      <input type="text" id="password" readonly>
+      <button onclick="copyPassword()">Copy</button>
+    </div>
+
+    <label>Password Length:
+      <input type="number" id="length" value="12" min="4" max="32">
+    </label>
+
+    <div class="options">
+      <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
+      <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+      <label><input type="checkbox" id="numbers" checked> Numbers</label>
+      <label><input type="checkbox" id="symbols" checked> Symbols</label>
+    </div>
+
+    <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
+
+    <a href="https://digitalheroesco.com" target="_blank">
+      <button class="dh-btn">Built for Digital Heroes</button>
+    </a>
+
+    <div class="footer">
+      <p><strong>arushi keshari </strong></p>
+      <p>aarushikeshari2004@gmail.com</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
